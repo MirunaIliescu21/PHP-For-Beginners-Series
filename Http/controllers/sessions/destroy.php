@@ -1,9 +1,10 @@
 <?php
 
+use Core\Authenticator;
 
-//log the user out
+// Log the user out via Authenticator
+$auth = new Authenticator();
+$auth->logout();
 
-logout();
-
-header('location: /');
-exit();
+// Redirect to home
+redirect('/');

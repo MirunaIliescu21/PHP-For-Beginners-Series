@@ -25,4 +25,10 @@ class LoginForm
     {
         return $this->errors;
     }
+
+    /** Setter for a single error */
+    public function error($field, $message)
+    {
+        $this->errors[$field] = $message;
+    }
 }
