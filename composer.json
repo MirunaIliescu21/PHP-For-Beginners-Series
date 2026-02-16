@@ -1,0 +1,17 @@
+{
+    "name": "miruna/lesson12",
+    "authors": [
+        {
+            "name": "MirunaIliescu21",
+            "email": "miruna.iliescu@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+
+        }
+    }
+}
