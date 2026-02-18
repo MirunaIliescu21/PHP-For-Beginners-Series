@@ -18,6 +18,11 @@ class Validator
     public static function email($value)
     {
         // Validator::email('john@example.com') -> return true bc has the form of the email address
-        return filter_var($value, FILTER_VALIDATE_EMAIL);
+        return (bool) filter_var($value, FILTER_VALIDATE_EMAIL);
+    }
+
+    public static function greaterThan($value, $min) : bool
+    {
+        return $value > $min;
     }
 }
